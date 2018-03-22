@@ -100,7 +100,13 @@
       Total: <span id="total-count">1</span>
     </div>
   </div>
+  <div class="footer">
+  Todo: <span id="todo-count">1</span> •
+  Done: <span id="completed-count">0</span> •
+  Total: <span id="total-count">1</span> •
 
+  <a href="#" id="clean-up">Clean up</a>
+  </div>
   <script>
   function updateCounters() {
 var todoCount = $(".todo").length;
@@ -170,12 +176,5 @@ function cleanUpDoneTodos(event) {
 }
 $("#clean-up").on('click', cleanUpDoneTodos);
   </script>
-  <div class="footer">
-  Todo: <span id="todo-count">1</span> •
-  Done: <span id="completed-count">0</span> •
-  Total: <span id="total-count">1</span> •
-
-  <a href="#" id="clean-up">Clean up</a>
-</div>
 </body>
 </html>
